@@ -47,7 +47,7 @@ function CloseSmartBanner() {
 } 
 
 function OpenInApp() {
-  document.location = 'us.lohas://product/1220';
+  document.location = $('meta[name=inapplink]').attr("content")||'us.lohas://';
   setTimeout(function() {
     document.location = 'https://itunes.apple.com/cn/app/le-huo-liang-pin-you-zhi-sheng/id525388235?mt=8';
   }, 300);
